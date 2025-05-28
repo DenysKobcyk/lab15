@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Моє місто Жешув</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<video autoplay muted loop class="bg-video">
+  <source src="media/videoplayback.mp4" type="video/mp4">
+</video>
+<audio autoplay loop hidden>
+  <source src="media/music.mp3" type="audio/mpeg">
+</audio>
+
+  <header>
+    <h1>Жешув — перлина Підкарпаття</h1>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="contact.html">Контакти</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Про місто</h2>
+      <p>Жешув — сучасне місто в Польщі, яке поєднує історію, студентське життя та технології.</p>
+    </section>
+    <section>
+      <h2>Цікаві факти</h2>
+      <ul>
+        <li>Понад 240 000 мешканців</li>
+        <li>Центр Підкарпатського воєводства</li>
+        <li>Університети, технологічні парки, старе місто</li>
+      </ul>
+    </section>
+    <section>
+      <h2></h2>
+      <canvas id="myCanvas" width="400" height="100"></canvas>
+      <script>
+        const c = document.getElementById("myCanvas");
+        const ctx = c.getContext("2d");
+        ctx.fillStyle = "#ffcc00";
+        ctx.fillRect(0, 0, 400, 100);
+        ctx.fillStyle = "#000";
+        ctx.font = "28px Times New Roman";
+        ctx.fillText("Вітаємо у Жешуві!", 80, 60);
+      </script>
+    </section>
+  </main>
+
+  <footer>
+  <audio controls loop>
+    <source src="media/music.mp3" type="audio/mpeg">
+    Ваш браузер не підтримує аудіо.
+  </audio>
+  <p>&copy; 2025 Моє місто Жешув</p>
+</footer>
+
+  </footer>
+</body>
+</html>

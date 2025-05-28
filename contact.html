@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакти</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<video autoplay muted loop class="bg-video">
+  <source src="media/videoplayback.mp4" type="video/mp4">
+</video>
+<audio autoplay loop hidden>
+  <source src="media/music.mp3" type="audio/mpeg">
+</audio>
+
+  <header>
+    <h1>Контактна форма</h1>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="contact.html">Контакти</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Напишіть нам</h2>
+      <form>
+        <label for="name">Ім’я:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Повідомлення:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Надіслати</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+  <audio controls loop>
+    <source src="media/music.mp3" type="audio/mpeg">
+    Ваш браузер не підтримує аудіо.
+  </audio>
+  <p>&copy; 2025 Моє місто Жешув</p>
+</footer>
+
+  </footer>
+</body>
+</html>
